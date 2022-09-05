@@ -1,4 +1,0 @@
-http://example.com/posts/deb5175a.html
-http://example.com/img/siteicon/manifest.json
-http://example.com/posts/4a17b156.html
-http://example.com/

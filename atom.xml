@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-09-02T10:23:42.156Z</updated>
+  <updated>2022-09-05T04:10:00.576Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,27 +21,14 @@
     <link href="http://example.com/posts/deb5175a.html"/>
     <id>http://example.com/posts/deb5175a.html</id>
     <published>2022-09-02T10:18:09.000Z</published>
-    <updated>2022-09-02T10:23:42.156Z</updated>
+    <updated>2022-09-05T04:10:00.576Z</updated>
     
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/posts/4a17b156.html"/>
-    <id>http://example.com/posts/4a17b156.html</id>
-    <published>2022-09-02T06:49:14.337Z</published>
-    <updated>2022-09-02T07:07:15.095Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h6 id="Linux系统目录结构"><a href="#Linux系统目录结构" class="headerlink" title="Linux系统目录结构"></a>Linux系统目录结构</h6><p>​    /dev :存放抽象硬件<br>​    /lib :存放系统库文件<br>​    /sbin :存放特权级二进制文件<br>​    /var :存放经常变化的文件<br>​    /home :普通用户目录<br>​    /etc :存放配置文件目录<br>​    /boot :存放内核与启动文件<br>​    /bin :存放二进制文件(可执行命令)<br>​    /usr :存放安装程序(软件默认目录)<br>​    /mnt :文件挂载目录(U盘,光驱)<br>​    /root :特权用户目录<br>​    /opt :大型软件存放目录<br>​    /tmp :存放临时文件</p><h6 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h6><p>​    Linux是一个多用户,多任务的操作系统<br>​    用户组 :就是具有相同特则的用户(user)的集合体；(我们可通过定义用户组和修改文件的权限来实现)<br>​    用户和用户组的关系 :<br>​        一对一 :一个用户可以存在一个组里，是组中的唯一成员；<br>​        一对多 :一个用户可以存在多个组里，此用户具有这多个组的共同权限；<br>​        多对一 :多个用户存放一个组中，这些用户具有和组相同的权限；<br>​        多对多 :多个用户可以存在多个组中，是以上3中关系的扩展。<br>​    1.用户和用户组命令：<br>​        root :UID是0<br>​        系统用户的UID为1~999<br>​        普通用户的UID从1000开始<br>​        添加用户:<br>​            useradd(选项)(参数)<br>​                -d 指定用户的家目录(默认为/home/username)<br>​                -e 用户到期时间,格式为YYYY-MM-DD.<br>​                -u 指定该用户的默认UID<br>​                -g 指定一个初始的用户基本组<br>​                -s 指定该用户默认Shell解释器<br>​        修改用户：<br>​            usermod(选项)(参数)<br>​                -c&lt;备注&gt; :修改用户账号的备注文字<br>​                -d&lt;登入目录&gt; :修改用户登入时的目录<br>​                -e&lt;有效期限&gt; :修改账号的有效期限<br>​                -f&lt;缓冲天数&gt; :修改在密码过期后多少天既关闭该账号<br>​                -g&lt;群组&gt; :修改用户的群组<br>​                -u :修改UID<br>​                -U :解除密码锁定<br>​        用户账号口令管理:(用户修改用户密码，过期时间，认证信息等)<br>​            userwd(选项)(参数)<br>​                -d :删除密码，仅有系统管理者才能使用<br>​                -f :强制执行<br>​                -k :设置只有在密码过期失效后，方能更新<br>​                -l :锁住密码<br>​                -s :列出密码的相关信息，仅有系统管理者才能使用<br>​                -u :解开已上锁的账号<br>​        删除用户:<br>​            userdel -rf (用户名)<br>​        </p><pre><code>    添加新组:        groupadd(选项)(参数)            -g :指定新建工作组的id            -r :创建系统工作组，系统工作组的组ID小于500    修改群组：        groupmod(选项)(参数)            -g&lt;群组识别码&gt; :设置欲使用的群组识别码            -o :重复使用群组识别码            -n&lt;新群组名称&gt; :设置欲使用的群组名称    删除群组:        groupdel groupname</code></pre><p><img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20220905120915312.png" alt="image-20220905120915312"></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;h6 id=&quot;Linux系统目录结构&quot;&gt;&lt;a href=&quot;#Linux系统目录结构&quot; class=&quot;headerlink&quot; title=&quot;Linux系统目录结构&quot;&gt;&lt;/a&gt;Linux系统目录结构&lt;/h6&gt;&lt;p&gt;​    /dev :存放抽象硬件&lt;br&gt;​    /lib :存放</summary>
       
     
     
